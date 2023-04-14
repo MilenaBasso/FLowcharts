@@ -1,0 +1,57 @@
+<!DOCTYPE> <html>
+    <html lang="en">
+
+    <head>
+        <meta charset=""UTF=-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>Login</title>
+    </head>
+
+
+    <script>
+        function login_faca() {
+    var usuario;
+    var senha;
+    var recorrer;
+    
+    recorrer = true;
+    do {
+        usuario = window.prompt('Enter a value for usuario');
+        senha = window.prompt('Enter a value for senha');
+        if (usuario == "Milena") {
+            if (senha == "5678") {
+                window.alert("Usuario e Senha OK");
+                recorrer = false;
+            }
+        }
+    } while (recorrer == "true");
+}
+
+        function login_enquanto() {
+    var usuario;
+    var senha;
+    var recorrer;
+    
+    recorrer = true;
+    while (recorrer) {
+        usuario = window.prompt('Enter a value for usuario');
+        senha = window.prompt('Enter a value for senha');
+        if (usuario == "Milena") {
+            if (senha == "5678") {
+                window.alert("usuario e senha OK");
+                recorrer = false;
+            }
+        }
+    }
+}
+
+
+       </script>
+
+<body>
+
+<button onclick="login_faca()"> LOGIN FAÇA </button>
+<button onclick="login_enquanto()">LOGIN ENQUANTO</button>
+
+</body>
+    </html>
