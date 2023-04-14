@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ALUNO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-14 12:18:44 "/>
+        <attribute name="created" value="QUxVTk87RUNFNDM2TUlDUk8wNzsyMDIzLTA0LTE0OyIxMjowOTo0MCAiOzI0MTM="/>
+        <attribute name="edited" value="QUxVTk87RUNFNDM2TUlDUk8wNzsyMDIzLTA0LTE0OyIxMjoxODo0NCAiOzEwOzI1NzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Usuario" type="String" array="False" size=""/>
+            <declare name="Senha" type="String" array="False" size=""/>
+            <declare name="recorrer" type="Boolean" array="False" size=""/>
+            <assign variable="recorrer" expression="true"/>
+            <do expression="recorrer==&quot;true&quot;">
+                <input variable="Usuario"/>
+                <input variable="Senha"/>
+                <if expression="Usuario=&quot;Milena&quot;">
+                    <then>
+                        <if expression="Senha=&quot;5678&quot;">
+                            <then>
+                                <output expression="&quot;Usuario e senha OK&quot;" newline="True"/>
+                                <assign variable="recorrer" expression="false"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
